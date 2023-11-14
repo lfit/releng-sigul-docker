@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1c56f99e_0d2d6ce4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2023-11-14T01:06:45Z",
+      "side": 1,
+      "message": "Removing self-vote; this is ready for NCPR.",
+      "revId": "16bbe00611ae1ebf03a28a584b928b898cee600b",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    }
+  ]
+}

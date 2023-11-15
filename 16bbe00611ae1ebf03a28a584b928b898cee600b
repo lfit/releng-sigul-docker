@@ -1,6 +1,57 @@
 {
   "comments": [
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "0d20daa4_2f880d33",
+        "filename": ".github/workflows/gerrit-verify-release.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-11-15T22:06:00Z",
+      "side": 1,
+      "message": "This job is always going to fire. With the way it\u0027s written it will only ever work on the HEAD of the branch. This means that you aren\u0027t doing proper change verification.\n\nThere is no clean way to do verify and a Gerrit release job in the same workflow / job set.",
+      "revId": "16bbe00611ae1ebf03a28a584b928b898cee600b",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "105e4516_61ebc701",
+        "filename": ".github/workflows/gerrit-verify-release.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-11-15T22:06:00Z",
+      "side": 1,
+      "message": "This should be:\n\n`if: github.event_name \u003d\u003d \u0027push\u0027 \u0026\u0026 startsWith(github.ref, \u0027refs/tags\u0027)`\n\nWhile I know this should only trigger on tag pushes, this is just a safety precaution.",
+      "revId": "16bbe00611ae1ebf03a28a584b928b898cee600b",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "be832ed1_3af74fa4",
+        "filename": ".github/workflows/gerrit-verify-release.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-11-15T22:06:00Z",
+      "side": 1,
+      "message": "Does this action push even on verify events?",
+      "revId": "16bbe00611ae1ebf03a28a584b928b898cee600b",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "1c56f99e_0d2d6ce4",
@@ -31,6 +82,23 @@
       "writtenOn": "2023-11-15T21:40:16Z",
       "side": 1,
       "message": "Can i suggest using \nDOCKERHUB_USER and\nDOCKERHUB_PASSWORD\n\nOne of the docker workflows expects the vars to be defined like that \nhttps://github.com/lfit/releng-reusable-workflows/blob/main/.github/workflows/compose-docker-verify.yaml\n\nThat way we wont have duplications",
+      "revId": "16bbe00611ae1ebf03a28a584b928b898cee600b",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "42fd8a0d_46da99c1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-11-15T22:06:00Z",
+      "side": 1,
+      "message": "I started reviewing the workflow and realized that with your trying to combine the verify and release workflows that you\u0027re running into a major configuration issue.\n\nBecause Gerrit change verification requires using the `lfit/checkout-gerrit-change-action` and merge / release jobs should be using `actions/checkout` your job is going to always have an issue checking out the correct change.\n\nYou could correct this some with two different checkout steps that fire based on an if condition, but the prepare / vote steps are always going to fail in a release (tag) scenario because they will never have data that is required to operate and as such runs from a tag are always going to look like they are failing.\n\nYou should instead break the verify job out into a gerrit-verify.yaml and the release job should be a release.yaml. If they have significant step overlap, you can create an in repository composite action that does that. It would live in `.github/actions/\u003caction_name\u003e/action.yaml` and would be referenced by path",
       "revId": "16bbe00611ae1ebf03a28a584b928b898cee600b",
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
     }

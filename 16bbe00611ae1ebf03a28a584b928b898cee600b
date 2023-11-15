@@ -16,6 +16,23 @@
       "message": "Removing self-vote; this is ready for NCPR.",
       "revId": "16bbe00611ae1ebf03a28a584b928b898cee600b",
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "28fd71e7_d4a5326e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 65
+      },
+      "writtenOn": "2023-11-15T21:40:16Z",
+      "side": 1,
+      "message": "Can i suggest using \nDOCKERHUB_USER and\nDOCKERHUB_PASSWORD\n\nOne of the docker workflows expects the vars to be defined like that \nhttps://github.com/lfit/releng-reusable-workflows/blob/main/.github/workflows/compose-docker-verify.yaml\n\nThat way we wont have duplications",
+      "revId": "16bbe00611ae1ebf03a28a584b928b898cee600b",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
     }
   ]
 }

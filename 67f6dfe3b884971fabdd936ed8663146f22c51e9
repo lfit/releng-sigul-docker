@@ -1,0 +1,141 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3387abb0_878ff41a",
+        "filename": ".github/workflows/gerrit-verify-release.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-11-16T18:39:00Z",
+      "side": 1,
+      "message": "This file needs to be renamed to gerrit-verify.yaml",
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "40bc931b_adcd1125",
+        "filename": ".github/workflows/gerrit-verify-release.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-11-16T18:39:00Z",
+      "side": 1,
+      "message": "we\u0027re at v0.4 for this",
+      "range": {
+        "startLine": 54,
+        "startChar": 43,
+        "endLine": 54,
+        "endChar": 44
+      },
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "74ad594b_c9887b44",
+        "filename": ".github/workflows/gerrit-verify-release.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-11-16T18:39:00Z",
+      "side": 1,
+      "message": "Ideally, this should have a `needs: prepare` but I can see where it\u0027s not strictly needed",
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d9bcd396_67ee528b",
+        "filename": ".github/workflows/gerrit-verify-release.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-11-16T18:39:00Z",
+      "side": 1,
+      "message": "We\u0027re on v0.6 now",
+      "range": {
+        "startLine": 69,
+        "startChar": 52,
+        "endLine": 69,
+        "endChar": 53
+      },
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a7d95d0c_d9bea34d",
+        "filename": ".github/workflows/gerrit-verify-release.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-11-16T18:39:00Z",
+      "side": 1,
+      "message": "v0.6 adds a `gerrit-url` input that should be the URL to the base Gerrit system. This is normally a GH org var.",
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c72a4a9e_a4e600bd",
+        "filename": ".github/workflows/gerrit-verify-release.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-11-16T18:39:00Z",
+      "side": 1,
+      "message": "We\u0027re on v0.4",
+      "range": {
+        "startLine": 103,
+        "startChar": 43,
+        "endLine": 103,
+        "endChar": 44
+      },
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "126b8b52_0883339d",
+        "filename": "Dockerfile",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-11-16T18:39:00Z",
+      "side": 1,
+      "message": "Why is there a comment here? This should either be a non-comment and do something, or not exist",
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    }
+  ]
+}

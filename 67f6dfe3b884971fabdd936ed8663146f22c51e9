@@ -224,6 +224,23 @@
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
     },
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "fcb9edf3_6d29826c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-11-16T18:49:50Z",
+      "side": 1,
+      "message": "This Subject does not conform to semantic commit messages. Should be `Chore: Initial repository configuration` with the changes I\u0027ve detailed",
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "c85edde8_d345d5b5",

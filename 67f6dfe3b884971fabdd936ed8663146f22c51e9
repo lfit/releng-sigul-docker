@@ -20,6 +20,29 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "5035f9bf_535e9b7b",
+        "filename": ".github/workflows/gerrit-verify-release.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-11-16T18:45:39Z",
+      "side": 1,
+      "message": "Change this to `clear-vote`",
+      "range": {
+        "startLine": 50,
+        "startChar": 2,
+        "endLine": 50,
+        "endChar": 9
+      },
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "40bc931b_adcd1125",
         "filename": ".github/workflows/gerrit-verify-release.yaml",
         "patchSetId": 2
@@ -37,6 +60,23 @@
         "endLine": 54,
         "endChar": 44
       },
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1fa42864_9db318d2",
+        "filename": ".github/workflows/gerrit-verify-release.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-11-16T18:45:39Z",
+      "side": 1,
+      "message": "This entire job needs to be moved to a following change that includes the docker file",
       "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
     },
@@ -100,6 +140,52 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "48567ff8_cc299ebd",
+        "filename": ".github/workflows/gerrit-verify-release.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-11-16T18:45:39Z",
+      "side": 1,
+      "message": "Change to `clear-vote`",
+      "range": {
+        "startLine": 98,
+        "startChar": 12,
+        "endLine": 98,
+        "endChar": 19
+      },
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "530703d2_95dbdf4e",
+        "filename": ".github/workflows/gerrit-verify-release.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-11-16T18:45:39Z",
+      "side": 1,
+      "message": "This needs to move the a follow on change that includes the docker file",
+      "range": {
+        "startLine": 98,
+        "startChar": 21,
+        "endLine": 98,
+        "endChar": 27
+      },
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "c72a4a9e_a4e600bd",
         "filename": ".github/workflows/gerrit-verify-release.yaml",
         "patchSetId": 2
@@ -123,6 +209,57 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "60155db1_d5012da3",
+        "filename": ".github/workflows/release.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-11-16T18:45:39Z",
+      "side": 1,
+      "message": "This needs to move to it\u0027s own change",
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c85edde8_d345d5b5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-11-16T18:45:39Z",
+      "side": 1,
+      "message": "This needs to be broken into a few extra changes.\n\n* Docker job and related files to a separate change\n* Release job to a separate change\n* pre-commit needs to be configured in _this_ change along with validation in the workflow",
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "247b4558_2cc52b0c",
+        "filename": "Dockerfile",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-11-16T18:45:39Z",
+      "side": 1,
+      "message": "This needs to move to the change that the docker job moves to",
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "126b8b52_0883339d",
         "filename": "Dockerfile",
         "patchSetId": 2
@@ -134,6 +271,23 @@
       "writtenOn": "2023-11-16T18:39:00Z",
       "side": 1,
       "message": "Why is there a comment here? This should either be a non-comment and do something, or not exist",
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "84b0ce31_cb8e18bd",
+        "filename": "fedora-infra-sigul.repo",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-11-16T18:45:39Z",
+      "side": 1,
+      "message": "This needs to move to the change that the docker job moves to",
       "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
     }

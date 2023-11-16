@@ -18,6 +18,24 @@
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b560f438_8519465b",
+        "filename": ".github/workflows/gerrit-verify-release.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2023-11-16T17:41:36Z",
+      "side": 1,
+      "message": "The verify step will now use our gerrit checkout.",
+      "parentUuid": "0d20daa4_2f880d33",
+      "revId": "16bbe00611ae1ebf03a28a584b928b898cee600b",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "105e4516_61ebc701",
@@ -35,6 +53,24 @@
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ae9c9119_fb1dbae0",
+        "filename": ".github/workflows/gerrit-verify-release.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2023-11-16T17:41:36Z",
+      "side": 1,
+      "message": "Since the release action will now only ever trigger on the event we want, I took this \"if\" out entirely.",
+      "parentUuid": "105e4516_61ebc701",
+      "revId": "16bbe00611ae1ebf03a28a584b928b898cee600b",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "be832ed1_3af74fa4",
@@ -48,6 +84,24 @@
       "writtenOn": "2023-11-15T22:06:00Z",
       "side": 1,
       "message": "Does this action push even on verify events?",
+      "revId": "16bbe00611ae1ebf03a28a584b928b898cee600b",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4f4f418d_d6358a39",
+        "filename": ".github/workflows/gerrit-verify-release.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2023-11-16T17:41:36Z",
+      "side": 1,
+      "message": "It didn\u0027t, as it was grabbing a boolean for \"push\" based on the event_name. But with release and verify split, I\u0027ve just explicitly set \"push\" to false on verify, true on release.",
+      "parentUuid": "be832ed1_3af74fa4",
       "revId": "16bbe00611ae1ebf03a28a584b928b898cee600b",
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
     },
@@ -99,6 +153,42 @@
       "writtenOn": "2023-11-15T22:06:00Z",
       "side": 1,
       "message": "I started reviewing the workflow and realized that with your trying to combine the verify and release workflows that you\u0027re running into a major configuration issue.\n\nBecause Gerrit change verification requires using the `lfit/checkout-gerrit-change-action` and merge / release jobs should be using `actions/checkout` your job is going to always have an issue checking out the correct change.\n\nYou could correct this some with two different checkout steps that fire based on an if condition, but the prepare / vote steps are always going to fail in a release (tag) scenario because they will never have data that is required to operate and as such runs from a tag are always going to look like they are failing.\n\nYou should instead break the verify job out into a gerrit-verify.yaml and the release job should be a release.yaml. If they have significant step overlap, you can create an in repository composite action that does that. It would live in `.github/actions/\u003caction_name\u003e/action.yaml` and would be referenced by path",
+      "revId": "16bbe00611ae1ebf03a28a584b928b898cee600b",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "25a8242f_025e142e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2023-11-16T17:41:36Z",
+      "side": 1,
+      "message": "Ok, I split the release into its own workflow.",
+      "parentUuid": "42fd8a0d_46da99c1",
+      "revId": "16bbe00611ae1ebf03a28a584b928b898cee600b",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "37ebba39_f8ba94e0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2023-11-16T17:41:36Z",
+      "side": 1,
+      "message": "Done.",
+      "parentUuid": "28fd71e7_d4a5326e",
       "revId": "16bbe00611ae1ebf03a28a584b928b898cee600b",
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
     }

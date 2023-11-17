@@ -18,6 +18,24 @@
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "54622361_23c3a1f4",
+        "filename": ".github/workflows/gerrit-verify-release.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2023-11-17T16:20:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3387abb0_878ff41a",
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5035f9bf_535e9b7b",
@@ -31,6 +49,30 @@
       "writtenOn": "2023-11-16T18:45:39Z",
       "side": 1,
       "message": "Change this to `clear-vote`",
+      "range": {
+        "startLine": 50,
+        "startChar": 2,
+        "endLine": 50,
+        "endChar": 9
+      },
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6c0c215f_2bc3ad93",
+        "filename": ".github/workflows/gerrit-verify-release.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2023-11-17T16:20:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5035f9bf_535e9b7b",
       "range": {
         "startLine": 50,
         "startChar": 2,
@@ -64,6 +106,30 @@
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9fd583b0_0f0f6bbf",
+        "filename": ".github/workflows/gerrit-verify-release.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2023-11-17T16:20:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "40bc931b_adcd1125",
+      "range": {
+        "startLine": 54,
+        "startChar": 43,
+        "endLine": 54,
+        "endChar": 44
+      },
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1fa42864_9db318d2",
@@ -81,6 +147,24 @@
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3631c39f_45072582",
+        "filename": ".github/workflows/gerrit-verify-release.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2023-11-17T16:20:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1fa42864_9db318d2",
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "74ad594b_c9887b44",
@@ -94,6 +178,24 @@
       "writtenOn": "2023-11-16T18:39:00Z",
       "side": 1,
       "message": "Ideally, this should have a `needs: prepare` but I can see where it\u0027s not strictly needed",
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e545ad84_f73f6646",
+        "filename": ".github/workflows/gerrit-verify-release.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2023-11-17T16:20:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "74ad594b_c9887b44",
       "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
     },
@@ -121,6 +223,30 @@
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ce470e8e_60f46dfa",
+        "filename": ".github/workflows/gerrit-verify-release.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2023-11-17T16:20:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d9bcd396_67ee528b",
+      "range": {
+        "startLine": 69,
+        "startChar": 52,
+        "endLine": 69,
+        "endChar": 53
+      },
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a7d95d0c_d9bea34d",
@@ -134,6 +260,24 @@
       "writtenOn": "2023-11-16T18:39:00Z",
       "side": 1,
       "message": "v0.6 adds a `gerrit-url` input that should be the URL to the base Gerrit system. This is normally a GH org var.",
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6d2a7783_14a31a6b",
+        "filename": ".github/workflows/gerrit-verify-release.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2023-11-17T16:20:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a7d95d0c_d9bea34d",
       "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
     },
@@ -184,6 +328,54 @@
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "74bc1bf0_5448a270",
+        "filename": ".github/workflows/gerrit-verify-release.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2023-11-17T16:20:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "530703d2_95dbdf4e",
+      "range": {
+        "startLine": 98,
+        "startChar": 21,
+        "endLine": 98,
+        "endChar": 27
+      },
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "97f7b02e_113a99ed",
+        "filename": ".github/workflows/gerrit-verify-release.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2023-11-17T16:20:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "48567ff8_cc299ebd",
+      "range": {
+        "startLine": 98,
+        "startChar": 12,
+        "endLine": 98,
+        "endChar": 19
+      },
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c72a4a9e_a4e600bd",
@@ -197,6 +389,30 @@
       "writtenOn": "2023-11-16T18:39:00Z",
       "side": 1,
       "message": "We\u0027re on v0.4",
+      "range": {
+        "startLine": 103,
+        "startChar": 43,
+        "endLine": 103,
+        "endChar": 44
+      },
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dd6979ba_51253c0d",
+        "filename": ".github/workflows/gerrit-verify-release.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2023-11-17T16:20:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c72a4a9e_a4e600bd",
       "range": {
         "startLine": 103,
         "startChar": 43,
@@ -224,6 +440,24 @@
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4fb586b9_b3cd5667",
+        "filename": ".github/workflows/release.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2023-11-17T16:20:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "60155db1_d5012da3",
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "fcb9edf3_6d29826c",
@@ -237,6 +471,24 @@
       "writtenOn": "2023-11-16T18:49:50Z",
       "side": 1,
       "message": "This Subject does not conform to semantic commit messages. Should be `Chore: Initial repository configuration` with the changes I\u0027ve detailed",
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "670826b4_822f3d37",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2023-11-17T16:20:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fcb9edf3_6d29826c",
       "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
     },
@@ -275,6 +527,24 @@
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a65a1c9f_c597a719",
+        "filename": "Dockerfile",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2023-11-17T16:20:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "247b4558_2cc52b0c",
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "126b8b52_0883339d",
@@ -292,6 +562,24 @@
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1a933777_4daedbe9",
+        "filename": "Dockerfile",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2023-11-17T16:20:26Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "126b8b52_0883339d",
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "84b0ce31_cb8e18bd",
@@ -305,6 +593,24 @@
       "writtenOn": "2023-11-16T18:45:39Z",
       "side": 1,
       "message": "This needs to move to the change that the docker job moves to",
+      "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b1baf04d_b5c7b899",
+        "filename": "fedora-infra-sigul.repo",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2023-11-17T16:20:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "84b0ce31_cb8e18bd",
       "revId": "67f6dfe3b884971fabdd936ed8663146f22c51e9",
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
     }

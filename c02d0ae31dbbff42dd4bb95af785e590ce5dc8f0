@@ -18,6 +18,24 @@
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2434cc30_0fd60e6f",
+        "filename": ".github/workflows/gerrit-verify.yaml",
+        "patchSetId": 3
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2023-11-17T16:16:13Z",
+      "side": 1,
+      "message": "I was thinking that pre-commit would go in after the initialization. But putting it in now makes sense. Done.",
+      "parentUuid": "144c4d03_8ada9ae6",
+      "revId": "c02d0ae31dbbff42dd4bb95af785e590ce5dc8f0",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "fbc5bdc4_e2418576",
@@ -31,6 +49,30 @@
       "writtenOn": "2023-11-17T13:49:21Z",
       "side": 1,
       "message": "This should be `actionlint` and you should also have `pre-commit` here too",
+      "range": {
+        "startLine": 86,
+        "startChar": 24,
+        "endLine": 86,
+        "endChar": 30
+      },
+      "revId": "c02d0ae31dbbff42dd4bb95af785e590ce5dc8f0",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "aaa302a7_8d3f51b5",
+        "filename": ".github/workflows/gerrit-verify.yaml",
+        "patchSetId": 3
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2023-11-17T16:16:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fbc5bdc4_e2418576",
       "range": {
         "startLine": 86,
         "startChar": 24,
@@ -64,6 +106,30 @@
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "51db866a_a935078b",
+        "filename": ".pre-commit-config.yaml",
+        "patchSetId": 3
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2023-11-17T16:16:13Z",
+      "side": 1,
+      "message": "We shouldn\u0027t need python in here at all, so I removed all the python sections.",
+      "parentUuid": "7903978a_17a6bb7e",
+      "range": {
+        "startLine": 38,
+        "startChar": 0,
+        "endLine": 55,
+        "endChar": 9
+      },
+      "revId": "c02d0ae31dbbff42dd4bb95af785e590ce5dc8f0",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a9c44552_3294785e",
@@ -87,6 +153,30 @@
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "fb39a920_be5fa1b7",
+        "filename": ".pre-commit-config.yaml",
+        "patchSetId": 3
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2023-11-17T16:16:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a9c44552_3294785e",
+      "range": {
+        "startLine": 68,
+        "startChar": 0,
+        "endLine": 74,
+        "endChar": 0
+      },
+      "revId": "c02d0ae31dbbff42dd4bb95af785e590ce5dc8f0",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "19234436_49f2eecf",
@@ -100,6 +190,30 @@
       "writtenOn": "2023-11-17T13:49:21Z",
       "side": 1,
       "message": "You can just remove these sections",
+      "range": {
+        "startLine": 82,
+        "startChar": 0,
+        "endLine": 86,
+        "endChar": 21
+      },
+      "revId": "c02d0ae31dbbff42dd4bb95af785e590ce5dc8f0",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2cc8a365_edc3ce3a",
+        "filename": ".pre-commit-config.yaml",
+        "patchSetId": 3
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2023-11-17T16:16:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "19234436_49f2eecf",
       "range": {
         "startLine": 82,
         "startChar": 0,

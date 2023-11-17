@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ef083359_ccc2b605",
+        "filename": ".github/workflows/gerrit-verify.yaml",
+        "patchSetId": 4
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-11-17T16:22:57Z",
+      "side": 1,
+      "message": "You should have the `gerrit-url: ${{ vars.GERRIT_URL }}` key here as well.",
+      "revId": "3bb24e41c3f40933d37fbbc7dbb862e670853898",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "904836c3_47bfb34c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-11-17T16:22:57Z",
+      "side": 1,
+      "message": "One last change and this is ready to go.",
+      "revId": "3bb24e41c3f40933d37fbbc7dbb862e670853898",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    }
+  ]
+}

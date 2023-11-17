@@ -100,9 +100,41 @@ jobs:
         # yamllint disable-line rule:line-length
         run: SKIP=actionlint pipx run pre-commit run --all-files --show-diff-on-failure
 
+  docker:
+    needs: clear-vote
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lfit/checkout-gerrit-change-action@v0.6
+        with:
+          gerrit-refspec: ${{ inputs.GERRIT_REFSPEC }}
+          delay: "0s"
+          gerrit-url: ${{ vars.GERRIT_URL }}
+      - name: Docker meta
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: |
+            lfreleng/sigul
+          # For git tag "v1.2.3", we will create image tags of "latest", "1",
+          # "1.2", and "1.2.3".
+          tags: |
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+            type=semver,pattern={{major}}
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      - name: Build and push
+        uses: docker/build-push-action@v5
+        with:
+          context: "."
+          push: false
+          tags: ${{ steps.meta.outputs.tags }}
+
   vote:
     if: ${{ always() }}
-    needs: [clear-vote, actionlint, pre-commit]
+    needs: [clear-vote, actionlint, pre-commit, docker]
     runs-on: ubuntu-latest
     steps:
       - uses: technote-space/workflow-conclusion-action@v3

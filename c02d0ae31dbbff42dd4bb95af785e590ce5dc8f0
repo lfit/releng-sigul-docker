@@ -1,0 +1,130 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "144c4d03_8ada9ae6",
+        "filename": ".github/workflows/gerrit-verify.yaml",
+        "patchSetId": 3
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-11-17T13:49:21Z",
+      "side": 1,
+      "message": "You should have a `pre-commit` section like this:\n\n```\npre-commit:\n  needs: clear-vote\n  runs-on: ubuntu-latest\n  steps:\n    - name: Checkout change\n      uses: lfit/checkout-gerrit-change-action@v0.6\n      with:\n        gerrit-refspec: ${{ inputs.GERRIT_REFSPEC }}\n        delay: \"0s\"\n        gerrit-url: ${{ vars.GERRIT_URL }}\n    - name: Configure Python\n      uses: actions/setup-python@v4\n      with:\n        python-version: \"3.11\"\n    - name: Run static analysis and format checkers\n      # yamllint disable-line rule:line-length\n      run: SKIP\u003dactionlint pipx run pre-commit run --all-files --show-diff-on-failure\n```",
+      "revId": "c02d0ae31dbbff42dd4bb95af785e590ce5dc8f0",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fbc5bdc4_e2418576",
+        "filename": ".github/workflows/gerrit-verify.yaml",
+        "patchSetId": 3
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-11-17T13:49:21Z",
+      "side": 1,
+      "message": "This should be `actionlint` and you should also have `pre-commit` here too",
+      "range": {
+        "startLine": 86,
+        "startChar": 24,
+        "endLine": 86,
+        "endChar": 30
+      },
+      "revId": "c02d0ae31dbbff42dd4bb95af785e590ce5dc8f0",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7903978a_17a6bb7e",
+        "filename": ".pre-commit-config.yaml",
+        "patchSetId": 3
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-11-17T13:49:21Z",
+      "side": 1,
+      "message": "You can just remove these sections",
+      "range": {
+        "startLine": 38,
+        "startChar": 0,
+        "endLine": 55,
+        "endChar": 9
+      },
+      "revId": "c02d0ae31dbbff42dd4bb95af785e590ce5dc8f0",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a9c44552_3294785e",
+        "filename": ".pre-commit-config.yaml",
+        "patchSetId": 3
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-11-17T13:49:21Z",
+      "side": 1,
+      "message": "You can just remove these sections",
+      "range": {
+        "startLine": 68,
+        "startChar": 0,
+        "endLine": 74,
+        "endChar": 0
+      },
+      "revId": "c02d0ae31dbbff42dd4bb95af785e590ce5dc8f0",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "19234436_49f2eecf",
+        "filename": ".pre-commit-config.yaml",
+        "patchSetId": 3
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-11-17T13:49:21Z",
+      "side": 1,
+      "message": "You can just remove these sections",
+      "range": {
+        "startLine": 82,
+        "startChar": 0,
+        "endLine": 86,
+        "endChar": 21
+      },
+      "revId": "c02d0ae31dbbff42dd4bb95af785e590ce5dc8f0",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7edddf5c_ce4f575d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-11-17T13:49:21Z",
+      "side": 1,
+      "message": "Almost there",
+      "revId": "c02d0ae31dbbff42dd4bb95af785e590ce5dc8f0",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    }
+  ]
+}

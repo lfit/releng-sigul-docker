@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6176608e_74ec0eb2",
+        "filename": ".github/workflows/gerrit-verify.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-11-20T16:52:52Z",
+      "side": 1,
+      "message": "Is this needed if it\u0027s just a verify?",
+      "revId": "5a9bdee6b42ee64f4ba8eefad507343e5c6197ee",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e6e0c2fc_94e8d5a1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-11-20T16:52:52Z",
+      "side": 1,
+      "message": "Just a small question. I\u0027m willing to go +2 if the answer really is yes.",
+      "revId": "5a9bdee6b42ee64f4ba8eefad507343e5c6197ee",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    }
+  ]
+}

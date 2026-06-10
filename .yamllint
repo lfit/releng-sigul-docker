@@ -1,0 +1,8 @@
+---
+# SHA-pinned action references (uses: owner/repo@<40-char-sha>  # vX.Y.Z)
+# exceed yamllint's default 80-column limit, so raise it.
+extends: default
+
+rules:
+  line-length:
+    max: 120

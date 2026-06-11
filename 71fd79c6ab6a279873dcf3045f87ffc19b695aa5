@@ -16,6 +16,24 @@
       "message": "Why are these not using pinned SHA versions?",
       "revId": "71fd79c6ab6a279873dcf3045f87ffc19b695aa5",
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2dcf0502_f36c5588",
+        "filename": ".github/workflows/gerrit-verify.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2026-06-11T22:47:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "800c478d_fe3a6719",
+      "revId": "71fd79c6ab6a279873dcf3045f87ffc19b695aa5",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09"
     }
   ]
 }

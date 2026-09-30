@@ -1,0 +1,13 @@
+---
+# SPDX-License-Identifier: Apache-2.0
+# SPDX-FileCopyrightText: 2026 The Linux Foundation
+
+# The Gerrit Verify workflow votes on changes with a dedicated SSH service
+# account. That key is an organization secret consumed by
+# lfit/gerrit-review-action, and every verify run needs it, so it is not
+# scoped to a deployment environment. This matches lfit/.github/zizmor.yml.
+rules:
+  secrets-outside-env:
+    config:
+      allow:
+        - LFIT_GERRIT_SSH_PRIVKEY_NP

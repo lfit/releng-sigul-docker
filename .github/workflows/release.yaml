@@ -5,12 +5,27 @@ on:
     tags:
       - "v*.*.*"
 
+permissions: {}
+
+# Never let two releases race to push the same image tags.
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
 jobs:
   docker:
+    name: "Publish image"
     runs-on: ubuntu-latest
+    # Run in the 'release' environment so the Docker Hub credentials can be
+    # scoped to it, and publishing gated by its protection rules.
+    environment: release
+    permissions:
+      contents: read
     steps:
       - name: Checkout
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2
+        with:
+          persist-credentials: false
       - name: Docker meta
         id: meta
         uses: docker/metadata-action@c299e40c65443455700f0fdfc63efafe5b349051  # v5.10.0

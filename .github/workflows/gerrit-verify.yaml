@@ -46,9 +46,13 @@ concurrency:
   group: ${{ github.event.inputs.GERRIT_CHANGE_ID || github.run_id }}
   cancel-in-progress: true
 
+permissions: {}
+
 jobs:
   clear-vote:
+    name: "Clear votes"
     runs-on: ubuntu-latest
+    permissions: {}
     steps:
       - name: Clear votes
         uses: lfit/gerrit-review-action@6ac4c2322b68c0120a9b516eb0421491ee1b3fdf  # v0.4
@@ -64,8 +68,11 @@ jobs:
         run: sleep 10s
 
   actionlint:
+    name: "actionlint"
     needs: clear-vote
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - name: Checkout change
         uses: lfit/checkout-gerrit-change-action@57bf0435f739fbbc7ce4cc85c9c3b8a386c6f84b  # v0.6
@@ -73,18 +80,18 @@ jobs:
           gerrit-refspec: ${{ inputs.GERRIT_REFSPEC }}
           delay: "0s"
           gerrit-url: ${{ vars.GERRIT_URL }}
-      - name: Download actionlint
-        id: get_actionlint
-        # yamllint disable-line rule:line-length
-        run: bash <(curl https://raw.githubusercontent.com/rhysd/actionlint/main/scripts/download-actionlint.bash)
-        shell: bash
       - name: Check workflow files
-        run: ${{ steps.get_actionlint.outputs.executable }} -color
+        # Pinned by digest, rather than piping a script from a branch to bash.
+        # yamllint disable-line rule:line-length
+        run: docker run --rm -v "${PWD}:/repo" -w /repo rhysd/actionlint:1.7.12@sha256:b1934ee5f1c509618f2508e6eb47ee0d3520686341fec936f3b79331f9315667 -color
         shell: bash
 
   pre-commit:
+    name: "pre-commit"
     needs: clear-vote
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - name: Checkout change
         uses: lfit/checkout-gerrit-change-action@57bf0435f739fbbc7ce4cc85c9c3b8a386c6f84b  # v0.6
@@ -98,11 +105,14 @@ jobs:
           python-version: "3.11"
       - name: Run static analysis and format checkers
         # yamllint disable-line rule:line-length
-        run: SKIP=actionlint pipx run pre-commit run --all-files --show-diff-on-failure
+        run: SKIP=actionlint pipx run --spec pre-commit==4.6.2 pre-commit run --all-files --show-diff-on-failure
 
   docker:
+    name: "Docker build"
     needs: clear-vote
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - uses: lfit/checkout-gerrit-change-action@57bf0435f739fbbc7ce4cc85c9c3b8a386c6f84b  # v0.6
         with:
@@ -133,9 +143,12 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
 
   vote:
+    name: "Vote"
     if: ${{ always() }}
     needs: [clear-vote, actionlint, pre-commit, docker]
     runs-on: ubuntu-latest
+    permissions:
+      actions: read  # workflow-conclusion-action reads this run's job results
     steps:
       - uses: technote-space/workflow-conclusion-action@45ce8e0eb155657ab8ccf346ade734257fd196a5  # v3.0.3
       - name: Set vote

@@ -55,7 +55,7 @@ jobs:
     permissions: {}
     steps:
       - name: Clear votes
-        uses: lfreleng-actions/gerrit-review-action@1e3eae766b3de755a2e87aa216cedebbaf9c8292  # v1.1.3
+        uses: lfreleng-actions/gerrit-review-action@d56b0b5c81402f8cb435aaca513bebdea3be951e  # v1.2.0
         with:
           host: ${{ vars.LFIT_GERRIT_SERVER }}
           username: ${{ vars.LFIT_GERRIT_SSH_USER }}
@@ -75,7 +75,7 @@ jobs:
       contents: read
     steps:
       - name: Checkout change
-        uses: lfreleng-actions/checkout-gerrit-change-action@298f53bbbc1d5f9e54df9feb484d110dc2b33197  # v1.1.0
+        uses: lfreleng-actions/checkout-gerrit-change-action@35e98c8043ec411611e464e296bcfb441a5c5093  # v1.1.2
         with:
           gerrit-refspec: ${{ inputs.GERRIT_REFSPEC }}
           gerrit-project: ${{ inputs.GERRIT_PROJECT }}
@@ -95,14 +95,14 @@ jobs:
       contents: read
     steps:
       - name: Checkout change
-        uses: lfreleng-actions/checkout-gerrit-change-action@298f53bbbc1d5f9e54df9feb484d110dc2b33197  # v1.1.0
+        uses: lfreleng-actions/checkout-gerrit-change-action@35e98c8043ec411611e464e296bcfb441a5c5093  # v1.1.2
         with:
           gerrit-refspec: ${{ inputs.GERRIT_REFSPEC }}
           gerrit-project: ${{ inputs.GERRIT_PROJECT }}
           delay: "0s"
           gerrit-url: ${{ vars.GERRIT_URL }}
       - name: Configure Python
-        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97  # v7.0.0
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0  # v7.1.0
         with:
           python-version: "3.11"
       - name: Run static analysis and format checkers
@@ -117,7 +117,7 @@ jobs:
       contents: read
     steps:
       - name: Checkout change
-        uses: lfreleng-actions/checkout-gerrit-change-action@298f53bbbc1d5f9e54df9feb484d110dc2b33197  # v1.1.0
+        uses: lfreleng-actions/checkout-gerrit-change-action@35e98c8043ec411611e464e296bcfb441a5c5093  # v1.1.2
         with:
           gerrit-refspec: ${{ inputs.GERRIT_REFSPEC }}
           gerrit-project: ${{ inputs.GERRIT_PROJECT }}
@@ -157,7 +157,7 @@ jobs:
       - name: Get conclusion
         uses: im-open/workflow-conclusion@8eac7f17381a6917bc04fec3e2c92e70ebc37526  # v3.0.0
       - name: Set vote
-        uses: lfreleng-actions/gerrit-review-action@1e3eae766b3de755a2e87aa216cedebbaf9c8292  # v1.1.3
+        uses: lfreleng-actions/gerrit-review-action@d56b0b5c81402f8cb435aaca513bebdea3be951e  # v1.2.0
         with:
           host: ${{ vars.LFIT_GERRIT_SERVER }}
           username: ${{ vars.LFIT_GERRIT_SSH_USER }}

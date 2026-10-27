@@ -19,6 +19,21 @@ RUN sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-* \
 # image speaks TLS to the signing bridge through NSS.
 RUN yum update -y && yum clean all
 
+# The CentOS 7 vault ca-certificates package is frozen and carries stale
+# root CAs, so yum update cannot refresh it. Install the current Mozilla
+# bundle (dated, immutable curl.se URL) as a trust anchor, verified against a
+# pinned SHA-256. Override both build args together to bump the bundle.
+ARG CA_BUNDLE_URL="https://curl.se/ca/cacert-2026-10-20.pem"
+ARG CA_BUNDLE_SHA256="796f1389bfea13c0ed78f663b765baaff54a508e5483786bd6ece73c5e3e3cbe"
+RUN curl --fail --silent --show-error --location --proto '=https' \
+        --output /tmp/cacert.pem "${CA_BUNDLE_URL}" \
+    && echo "${CA_BUNDLE_SHA256}  /tmp/cacert.pem" | sha256sum --check --strict \
+    && update-ca-trust force-enable \
+    && install -m 0644 /tmp/cacert.pem \
+        /etc/pki/ca-trust/source/anchors/mozilla-cacert.pem \
+    && update-ca-trust extract \
+    && rm -f /tmp/cacert.pem
+
 # git is required by `sigul sign-git-tag` to read and modify tag objects.
 # Installed separately from sigul so that a sigul failure below is not masked
 # by git installing successfully (a single combined "yum install" can exit 0

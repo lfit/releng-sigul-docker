@@ -1,0 +1,8 @@
+Verified+1: LFIT Required GHA <releng+lfit-required-gha@linuxfoundation.org>
+Verified+1: LFIT GitHub-Gerrit <releng+github-lfit-gerrit@linuxfoundation.org>
+Code-Review+2: Matthew Watkins <mwatkins@linuxfoundation.org>
+Submitted-by: Matthew Watkins <mwatkins@linuxfoundation.org>
+Submitted-at: Tue, 17 Nov 2026 13:05:04 +0000
+Reviewed-on: https://gerrit.linuxfoundation.org/infra/c/releng/sigul-docker/+/74824
+Project: releng/sigul-docker
+Branch: refs/heads/main

@@ -4,7 +4,7 @@
 # sigul 0.207 needs Python 2 and python-nss, so this image stays on CentOS 7
 # until the Sigul infrastructure moves to a newer release. The base image is
 # pinned by digest; the tag cannot be moved under us.
-FROM centos:7@sha256:be65f488b7764ad3638f236b7b515b3678369a5124c47b8d32916d6487418ea4
+FROM centos:8@sha256:a27fd8080b517143cbbbab9dfb7c8571c40d67d534bbdee55bd6c473f432b177
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # CentOS 7 reached EOL on 2024-06-30 and mirrorlist.centos.org no longer
